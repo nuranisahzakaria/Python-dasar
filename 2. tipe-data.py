@@ -1,4 +1,7 @@
-# LIST
+# TIPE DATA PYTHON
+# beda kurung beda tipe
+
+# LIST (kurung siku)
 # Kumpulan variabel terurut
 list = [1, 2.2, 'python']
 
@@ -35,9 +38,44 @@ s = "Halo Dunia!"   # ubah isi string s menjadi "Halo Dunia!", seharusnya berhas
 print(s)
 
 # --------------------------------------------------------------------------------------------------------
-# TUPLE
+# TUPLE (kurung biasa)
 # Tuple adalah jenis dari list yang tidak dapat diubah elemennya
 tuple = (5, 'program', 1 + 3j)
 print(tuple[1])
 print(tuple[0:3])
 
+# --------------------------------------------------------------------------------------------------------
+# SET (kurung kurawal)
+# Set adalah kumpulan item bersifat unik dan tanpa urutan
+set = {1, 2, 2, 3, 3, 3}
+print(set)
+
+# --------------------------------------------------------------------------------------------------------
+# KEY-VALUE
+d = {1: 'value', 'key': 2}
+print(type(d))
+print("d[1] = ", d[1]);
+print("d['key'] = ", d['key']);
+
+# --------------------------------------------------------------------------------------------------------
+# KONVERSI TIPE DATA
+print(float(5))
+print(int(10.6))
+print(int(-10.6))
+print(float('2.5'))
+print(str(25))
+print(int('1p'))
+print(set([1, 2, 3]))
+print(tuple({5, 6, 7}))
+print(list('hello'))
+print(dict([[1, 2], [3, 4]]))
+print(dict([(3, 26), (4, 44)]))
+
+# cek tipe data
+contoh = 19.7
+print(type(contoh))
+
+if False:
+    9 + "satu"  # Baris ini tidak dioperasikan, sehingga tidak muncul notifikasi TypeError
+else:
+    9 + 1
