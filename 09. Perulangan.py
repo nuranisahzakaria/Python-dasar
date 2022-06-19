@@ -17,11 +17,19 @@ while (count < 7):
     print('Hitungannya adalah: {}'.format(count))
 
     count =count + 1
-
-# -----------------------------------------------PERULANGAN BERTINGKAT--------------------------------------------------
 var = 1
 while var == 1:     # Struktur infinite loop
     num = input('Masukkan angka: ')
     print('Anda memasukkan angka: {}'.format(num))
+    var = var + 0.25
 
-while True:     #
+while True:     # Struktur infinite loop
+    num = input('Masukkan angka: ')
+    print('Anda memasukkan angka: {}'.format(num))
+    var = var + 0.25
+
+# -----------------------------------------------PERULANGAN BERTINGKAT--------------------------------------------------
+for i in range(0, 6):
+    for j in range(0, 6 - i):
+        print('*', end='')
+    print()
