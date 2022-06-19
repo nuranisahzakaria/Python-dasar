@@ -1,5 +1,5 @@
 # ---------------------------------------------------- IF ---------------------------------------------------------------
-# Pakek garis-garis gino norak sih sebernya, tapi gapapa lah biar enak belajar. Suatu hari kalo aku udah pinter ngoding
+# Pakek garis-garis gini norak sih sebenarnya, tapi gapapa lah biar enak belajar. Suatu hari kalo aku udah pinter ngoding
     # dan liat kodingan ini, pasti aku ketawain, wkwkwkwk. Tapi kalo masih ada umur dimasa depan sih, hehehe.
 # CONTOH 1
 kelerengku = 10
