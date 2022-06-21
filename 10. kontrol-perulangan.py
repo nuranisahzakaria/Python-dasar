@@ -59,3 +59,57 @@ while n > 0:
     print(n)
 else:
     print("Loop selesai")
+
+# PASS ................................................
+    # sebuah pernyataan atau blok pernyataan (statement), namun tidak melakukan apapun - melanjutkan eksekusi sesuai
+    # dengan urutannya. Kontrol ini banyak digunakan saat Anda belum melakukan implementasi (atau menyiapkan tempat
+    # untuk implementasi), serta membiarkan program tetap berjalan saat misalnya Anda mengalami kegagalan atau exception.
+# import sys
+# data=''
+# while(data!='exit'):
+#     try:
+#         data=input('Please enter an integer (type exit to exit): ')
+#         print('got integer: {}'.format(int(data)))
+#     except:
+#         if data == 'exit':
+#             pass  # exit gracefully without prompt any error
+#         else:
+#             print('error: {}'.format(sys.exc_info()[0]))
+
+# LIST COMPREHENTION
+# CONTOH 1 tanpa list comprehention
+angka = [1, 2, 3, 4]
+pangkat = []
+for n in angka:
+    pangkat.append(n**2)
+print(pangkat)
+# CONTOH 1 dengan list comprehention
+angka = [1, 2, 3, 4]
+pangkat = [n**2 for n in angka]
+print(pangkat)
+
+# CONTOH 2
+list1 = ['n', 'i', 's', 'a']
+list2 = ['n', 'u', 'r', 'a']
+# tanpa list comprehention
+duplikats = []
+for a in list1:
+    for b in list2:
+        if a == b:
+            duplikats.append(a)
+print(duplikats)
+
+# dengan list comprehention
+duplikats = [a for a in list1 for b in list2 if a == b]
+print (duplikats)
+
+# CONTOH 3
+# kecilkan semua huruf
+a = ["Halo", 'Nisa', 'Apa', 'Kabar']
+a_huruf_kecil = [ulang.lower() for ulang in a]
+print(a_huruf_kecil)
+
+# CONTOH 4
+angka = range (1, 10, 2)
+x = [[g**2, g**3] for g in angka] # g => angka 1, 3, 5, 7, 9
+print(x)
